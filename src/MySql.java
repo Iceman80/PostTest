@@ -38,7 +38,7 @@ public class MySql {
             addToSql(name, age, address, salary);
             temp = true;
         } else {
-            System.out.println("User with the same name already exists");
+            System.out.println("User "+name+" with the already exists");
         }
         return temp;
     }
