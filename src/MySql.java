@@ -11,7 +11,7 @@ public class MySql {
                     .getConnection("jdbc:postgresql://localhost:5432/testdb",
                             "ice", "123");
 
-            System.out.println("Opened database successfully");
+            System.out.println("Opened database successfully\n");
             stmt = c.createStatement();
             stmt.executeUpdate("create table if not exists COMPANY (ID SERIAL , NAME varchar(256)  ,AGE int, ADDRESS varchar(256), SALARY int, primary key (ID));");
         } catch (Exception e) {
@@ -38,21 +38,18 @@ public class MySql {
             addToSql(name, age, address, salary);
             temp = true;
         } else {
-            System.out.println("User "+name+" with the already exists");
+            System.out.println("User "+name+" with the already exists\n");
         }
         return temp;
     }
 
     public void printSql(String table, String find) {
-        int x = 0;
-
         try {
             String tmp = "select * from COMPANY where " + table + "='" + find + "';";
             stmt.executeQuery(tmp);
             ResultSet result = stmt.getResultSet();
-            x = result.getMetaData().getColumnCount();
-            System.out.println();
-
+            int x = result.getMetaData().getColumnCount();
+            System.out.println("ID  Name    Age Address Salary");
             while (result.next()) {
                 for (int i = 1; i <= x; i++) {
                     System.out.print(result.getString(i) + "\t");

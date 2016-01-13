@@ -10,8 +10,8 @@
       <schema id="2" parent="1" name="public">
         <object-id>2200</object-id>
         <comment>standard public schema</comment>
-        <introspection-state-number>3755</introspection-state-number>
-        <introspection-timestamp>2016-01-13.15:53:32.703</introspection-timestamp>
+        <introspection-state-number>3827</introspection-state-number>
+        <introspection-timestamp>2016-01-13.18:28:06.029</introspection-timestamp>
       </schema>
       <schema id="3" parent="1" name="pg_catalog">
         <object-id>11</object-id>
@@ -20,8 +20,8 @@
         <introspection-timestamp>2016-01-12.14:05:30.396</introspection-timestamp>
       </schema>
       <sequence id="4" parent="2" name="company_id_seq">
-        <object-id>28724</object-id>
-        <state-number>3755</state-number>
+        <object-id>28735</object-id>
+        <state-number>3827</state-number>
       </sequence>
       <sequence id="5" parent="2" name="hibernate_sequence">
         <object-id>27974</object-id>
@@ -44,8 +44,8 @@
         <state-number>3239</state-number>
       </sequence>
       <table id="10" parent="2" name="company">
-        <object-id>28726</object-id>
-        <state-number>3755</state-number>
+        <object-id>28737</object-id>
+        <state-number>3827</state-number>
       </table>
       <table id="11" parent="2" name="itemsmyshop">
         <object-id>27978</object-id>
@@ -19992,29 +19992,29 @@
         <bind-function>bpchariclike(char,text)</bind-function>
       </operator>
       <column id="3551" parent="10" name="id">
-        <state-number>3755</state-number>
+        <state-number>3827</state-number>
         <mandatory>1</mandatory>
         <data-type>integer</data-type>
         <default-expression>nextval(&apos;company_id_seq&apos;::regclass)</default-expression>
       </column>
       <column id="3552" parent="10" name="name">
-        <state-number>3755</state-number>
+        <state-number>3827</state-number>
         <data-type>varchar(256)</data-type>
       </column>
       <column id="3553" parent="10" name="age">
-        <state-number>3755</state-number>
+        <state-number>3827</state-number>
         <data-type>integer</data-type>
       </column>
       <column id="3554" parent="10" name="address">
-        <state-number>3755</state-number>
+        <state-number>3827</state-number>
         <data-type>varchar(256)</data-type>
       </column>
       <column id="3555" parent="10" name="salary">
-        <state-number>3755</state-number>
+        <state-number>3827</state-number>
         <data-type>integer</data-type>
       </column>
       <index id="3556" parent="10" name="company_pkey">
-        <object-id>28733</object-id>
+        <object-id>28744</object-id>
         <columns>id</columns>
         <desc-columns></desc-columns>
         <unique>1</unique>
